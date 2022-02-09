@@ -1,3 +1,5 @@
-# ccaps
+# Adaptive Prediction Sets with Class Conditional Coverage
 
-code is inspired by https://github.com/msesia/arc
+While modern machine learning models can perform classification tasks with high accuracy, deploying them in high risk settings requires methods to measure their uncertainty. Prior methods of uncertainty quantification output a prediction set that contains the true label with a user-specified probability, but these guarantees only hold on average over the entire dataset rather than for each class. Here, we present CCAPS, an algorithm which can convert a black-box classifier to output a prediction set of labels with a finite-sample coverage guarantee, conditioned on the input being from any class. CCAPS works on any dataset, can wrap around any model, and is flexible enough to allow users to choose a subset of classes on which they want the coverage guarantees to hold. Through experiments with classical machine learning classifiers and modern deep neural networks on MNIST, CIFAR10 and ImageNet, we demonstrate the empirical effectiveness of our theoretical guarantees.
+
+Code is inspired by https://github.com/msesia/arc.
